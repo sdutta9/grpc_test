@@ -4,7 +4,6 @@
 FROM golang
 RUN go get -u google.golang.org/grpc
 RUN git clone -b v1.41.0 https://github.com/grpc/grpc-go
-RUN ls .
 WORKDIR grpc-go/examples/helloworld
 
 EXPOSE 50051
